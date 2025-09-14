@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="flex justify-center items-center bg-[#642856] h-[100vh]">
+  <div class="container w-[600px] p-3.5 flex flex-col justify-center items-center gap-7 rounded-4xl bg-amber-50  " >
+    <h1 class="text-3xl font-bold">Currency Converter</h1>
+    <div class="inp-section flex items-center justify-center gap-2 m-1.5">
+      <label for="inp-section">Enter Amount</label>
+      <input id="Amount" type="number" placeholder="0" class="border-[1px] rounded-md p-1 text-sm">
+    </div>
+    <div class="select-section flex justify-around gap-8 items-center">
+      <div class="from flex items-center justify-center gap-1.5">
+        <span>From</span>
+        <div class="sel-box border-2 rounded-md flex justify-center items-center p-1 border-gray-200 ">
+          <img src="https://flagsapi.com/US/flat/64.png" width="30px" alt="">
+          <select name="from" id="from">
+          </select>
+        </div>
+      </div>
+      <i class="fa-solid fa-right-left"></i>
+      <div class="to from flex items-center justify-center gap-1.5">
+        <span>To</span>
+        <div class="sel-box border-2 rounded-md flex justify-center items-center p-1 border-gray-200">
+
+          <img src="https://flagsapi.com/PK/flat/64.png" width="30px" alt="">
+          <select name="to" id="to">
+          </select>
+        </div>
+      </div>
+    </div>
+    <div id="message-box" class="text-center">
+     <b>Enter amount and select currencies!</b>
+    </div>
+    <div class="button">
+      <button id="get-result" class="bg-[#976F8E] py-3 px-5 rounded-lg text-amber-50 hover:bg-[#642856] cursor-pointer active:scale-95 transition shadow-md">
+        Get Exchange Rates.
+      </button>
+    </div>
+  </div>
+  <script src="codes.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
